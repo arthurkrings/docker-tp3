@@ -8,6 +8,6 @@ docker cp ./index.php SCRIPT:/var/www/html
 docker cp ./test.php SCRIPT:/var/www/html
 docker exec -it SCRIPT /bin/bash
 mkdir /app
-cp index.php
-cp test.php
+cp index.php /app
+cp test.php /app
 curl localhost:8080/test.php
